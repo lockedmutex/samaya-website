@@ -58,6 +58,10 @@ def process_images(contributors):
             img_response.raise_for_status()
             
             img = Image.open(BytesIO(img_response.content))
+
+            if img.size[0] > 256 or img.size[1] > 256:
+                img = img.resize((256, 256), Image.Resampling.LANCZOS)
+            
             img.save(local_path, "AVIF", quality=80)
             
             user['local_image'] = web_path
