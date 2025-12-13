@@ -18,9 +18,10 @@
         content="A native, lightweight Pomodoro timer for Linux desktops. Focus on your work with Samaya." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://samaya.suyogtandel.in" />
-    <meta property="og:image" content="./screenshot1.avif" />
+    <meta property="og:image" content="./screenshot1.png" />
 
     <link rel="icon" type="image/svg+xml" href="./io.github.redddfoxxyy.samaya.svg" />
+    <link rel="preload" as="image" href="./io.github.redddfoxxyy.samaya.svg" fetchpriority="high" />
 
     <script src="./contributors/contributors.js"></script>
 
@@ -450,8 +451,8 @@
         <div class="nav-right">
             <a href="https://codeberg.org/lockedmutex/samaya" target="_blank" class="btn-repo">
                 <div class="icon-container">
-                    <img src="./codeberg-logo_icon_blue.svg" class="repo-icon icon-light" />
-                    <img src="./codeberg-logo_icon_white.svg" class="repo-icon icon-dark" />
+                    <img src="./codeberg-logo_icon_blue.svg" class="repo-icon icon-light" alt="codeberg icon blue"/>
+                    <img src="./codeberg-logo_icon_white.svg" class="repo-icon icon-dark" alt="codeberg icon white"/>
                 </div>
                 Codeberg
             </a>
@@ -477,107 +478,109 @@
         </div>
     </header>
 
-    <section class="hero">
-        <img 
-            src="./io.github.redddfoxxyy.samaya.svg" 
-            alt="Samaya App Icon" 
-            class="hero-logo" 
-            fetchpriority="high" 
-            loading="eager"
-        />
-        <h1>Samaya</h1>
-        <p class="subtitle">
-            A simple, elegant, minimalist Pomodoro timer for your desktop.
-        </p>
-        <p class="hindi-meaning">
-            Samaya means time in Hindi, written as <code>समय</code>
-        </p>
+    <main>
+        <section class="hero">
+            <img 
+                src="./io.github.redddfoxxyy.samaya.svg" 
+                alt="Samaya App Icon" 
+                class="hero-logo" 
+                fetchpriority="high" 
+                loading="eager"
+            />
+            <h1>Samaya</h1>
+            <p class="subtitle">
+                A simple, elegant, minimalist Pomodoro timer for your desktop.
+            </p>
+            <p class="hindi-meaning">
+                Samaya means time in Hindi, written as <code>समय</code>
+            </p>
 
-        <div class="cta-buttons">
-            <a href="https://flathub.org/apps/io.github.redddfoxxyy.samaya" class="btn-primary" target="_blank">Get it
-                on Flathub</a>
-            <a href="https://codeberg.org/lockedmutex/samaya/releases/latest" class="btn-repo" target="_blank">Download
-                Source</a>
-        </div>
-    </section>
+            <div class="cta-buttons">
+                <a href="https://flathub.org/apps/io.github.redddfoxxyy.samaya" class="btn-primary" target="_blank">Get it
+                    on Flathub</a>
+                <a href="https://codeberg.org/lockedmutex/samaya/releases/latest" class="btn-repo" target="_blank">Download
+                    Source</a>
+            </div>
+        </section>
 
-    <section class="screenshots-container">
-        <img src="./screenshot1.avif" alt="Samaya Screenshot - Timer" class="screenshot" />
-        <img src="./screenshot3.avif" alt="Samaya Screenshot - Settings" class="screenshot" />
-    </section>
+        <section class="screenshots-container">
+            <img src="./screenshot1.png" alt="Samaya Screenshot - Timer" class="screenshot" />
+            <img src="./screenshot2.png" alt="Samaya Screenshot - Settings" class="screenshot" />
+        </section>
 
-    <div class="container">
-        <h2 class="section-title">Features</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Light Weight</h3>
-                <p>Only ~55KB in size (111KB with assets). Built for speed and efficiency.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Routine Management</h3>
-                <p>Switch between Pomodoro (25m), Short Break (5m), and Long Break (20m) easily.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Skip Sessions</h3>
-                <p>Instantly skip the current timer. The session count increments automatically, transitioning you
-                    directly to the next interval.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Customizable</h3>
-                <p>Adjust work and break durations to fit your specific workflow in settings.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Native Experience</h3>
-                <p>Written in C using GTK4 and Libadwaita for a perfect GNOME desktop integration.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Smart Notifications</h3>
-                <p>Get sound notifications when your timer ends so you never miss a break.</p>
-            </div>
-        </div>
-
-        <div class="install-section">
-            <h2 class="section-title">Installation</h2>
-
-            <h3 style="margin-bottom: 10px">Flatpak (Recommended)</h3>
-            <div class="code-wrapper">
-                <div class="code-block" id="cmd-flatpak">flatpak install flathub io.github.redddfoxxyy.samaya</div>
-                <button class="copy-btn" onclick="copyToClipboard(this, 'cmd-flatpak')" aria-label="Copy to clipboard">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </button>
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Light Weight</h3>
+                    <p>Only ~55KB in size (111KB with assets). Built for speed and efficiency.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Routine Management</h3>
+                    <p>Switch between Pomodoro (25m), Short Break (5m), and Long Break (20m) easily.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Skip Sessions</h3>
+                    <p>Instantly skip the current timer. The session count increments automatically, transitioning you
+                        directly to the next interval.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Customizable</h3>
+                    <p>Adjust work and break durations to fit your specific workflow in settings.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Native Experience</h3>
+                    <p>Written in C using GTK4 and Libadwaita for a perfect GNOME desktop integration.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Smart Notifications</h3>
+                    <p>Get sound notifications when your timer ends so you never miss a break.</p>
+                </div>
             </div>
 
-            <h3>Build from Source</h3>
-            <p style="margin-bottom: 10px; opacity: 0.8">Requires Meson, Ninja, GTK4, Libadwaita, Libcanberra and
-                GSound.</p>
-            <div class="code-wrapper">
-                <div class="code-block" id="cmd-source">git clone https://codeberg.org/lockedmutex/samaya.git
+            <div class="install-section">
+                <h2 class="section-title">Installation</h2>
+
+                <h3 style="margin-bottom: 10px">Flatpak (Recommended)</h3>
+                <div class="code-wrapper">
+                    <div class="code-block" id="cmd-flatpak">flatpak install flathub io.github.redddfoxxyy.samaya</div>
+                    <button class="copy-btn" onclick="copyToClipboard(this, 'cmd-flatpak')" aria-label="Copy to clipboard">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <h3>Build from Source</h3>
+                <p style="margin-bottom: 10px; opacity: 0.8">Requires Meson, Ninja, GTK4, Libadwaita, Libcanberra and
+                    GSound.</p>
+                <div class="code-wrapper">
+                    <div class="code-block" id="cmd-source">git clone https://codeberg.org/lockedmutex/samaya.git
 cd samaya
 meson setup builddir --buildtype=release
 meson compile -C builddir
 ./builddir/src/samaya</div>
-                <button class="copy-btn" onclick="copyToClipboard(this, 'cmd-source')" aria-label="Copy to clipboard">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                </button>
+                    <button class="copy-btn" onclick="copyToClipboard(this, 'cmd-source')" aria-label="Copy to clipboard">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <div class="contributors-section" id="contributors-container" style="display: none;">
-            <h2 class="section-title">Contributors</h2>
-            <p style="opacity: 0.8; margin-bottom: 20px;">Thanks to the developers and translators for their contributions</p>
-            <div class="contributors-grid" id="contributors-list">
+            <div class="contributors-section" id="contributors-container" style="display: none;">
+                <h2 class="section-title">Contributors</h2>
+                <p style="opacity: 0.8; margin-bottom: 20px;">Thanks to the developers and translators for their contributions</p>
+                <div class="contributors-grid" id="contributors-list">
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </main>
 
     <footer>
         <p>Copyright &copy; 2025 lockedmutex (Suyog Tandel)</p>
