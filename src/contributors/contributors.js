@@ -3,7 +3,7 @@ window.SAMAYA_CONTRIBUTORS = [
         "username": "lockedmutex",
         "avatar_url": "https://codeberg.org/avatars/45e02b4a39a053f0bc185fd02c54ef10aac8667ce27e64195e3992db7bfd8cca",
         "profile_url": "https://codeberg.org/lockedmutex",
-        "contributions": 25,
+        "contributions": 24,
         "local_image": "./contributors/images/lockedmutex.avif"
     },
     {
@@ -17,7 +17,7 @@ window.SAMAYA_CONTRIBUTORS = [
         "username": "hthienloc",
         "avatar_url": "https://codeberg.org/avatars/ba69859398ae016ed05d9f0474455d19",
         "profile_url": "https://codeberg.org/hthienloc",
-        "contributions": 1,
+        "contributions": 2,
         "local_image": "./contributors/images/hthienloc.avif"
     },
     {
