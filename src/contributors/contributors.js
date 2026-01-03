@@ -39,6 +39,6 @@ window.SAMAYA_CONTRIBUTORS = [
         "avatar_url": "https://codeberg.org/avatars/18748967cebea2c0af5f16d6b9a3ccc63507c3bc6586e747a396ba6c91d33237",
         "profile_url": "https://codeberg.org/yakushabb",
         "contributions": 1,
-        "local_image": "./contributors/images/yakushabb.avif"
+        "local_image": "https://codeberg.org/avatars/18748967cebea2c0af5f16d6b9a3ccc63507c3bc6586e747a396ba6c91d33237"
     }
 ];
