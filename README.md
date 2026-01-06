@@ -13,8 +13,8 @@
 <h1 align="center">Samaya</h1>
 
 <p align="center">
-  <img src="src/screenshot1.avif"  alt="Samaya Screenshot 1"/>
-  <img src="src/screenshot3.avif"  alt="Samaya Screenshot 2"/>
+  <img src="src/screenshot1.webp"  alt="Samaya Screenshot 1"/>
+  <img src="src/screenshot2.webp"  alt="Samaya Screenshot 2"/>
 </p>
 
 #### A simple, elegant, minimalist Pomodoro timer for your desktop. Designed to help you stay focused and productive, it offers a clean, distraction-free interface to manage work and break intervals with ease.

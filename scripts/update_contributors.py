@@ -53,7 +53,7 @@ def process_images(contributors):
         username = user["username"]
         avatar_url = user["avatar_url"]
 
-        filename = f"{username.lower()}.avif"
+        filename = f"{username.lower()}.webp"
         local_path = os.path.join(IMAGES_DIR, filename)
         web_path = f"./contributors/images/{filename}"
 
@@ -68,7 +68,7 @@ def process_images(contributors):
             if img.size[0] > 128 or img.size[1] > 128:
                 img = img.resize((128, 128), Image.Resampling.LANCZOS)
 
-            img.save(local_path, "AVIF", quality=80)
+            img.save(local_path, "WebP", quality=80)
 
             user["local_image"] = web_path
             processed_list.append(user)
