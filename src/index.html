@@ -317,6 +317,20 @@
                 background-color: var(--adw-accent-hover);
             }
 
+            .btn-secondary {
+                background-color: var(--adw-card-bg);
+                color: var(--adw-fg);
+                padding: 12px 28px;
+                border-radius: 50px;
+                font-weight: bold;
+                border: 1px solid var(--adw-border);
+                transition: background 0.2s;
+            }
+
+            .btn-secondary:hover {
+                background-color: var(--adw-bg);
+            }
+
             .screenshots-container {
                 display: flex;
                 justify-content: center;
@@ -325,6 +339,216 @@
                 flex-wrap: wrap;
                 margin-bottom: 80px;
                 align-items: center;
+            }
+
+            .app-showcase-container {
+                margin: 80px auto;
+                max-width: 1200px;
+                padding: 0 24px;
+            }
+
+            .app-showcase {
+                display: flex;
+                flex-direction: column;
+                gap: 120px;
+            }
+
+            .showcase-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 64px;
+                align-items: center;
+                position: relative;
+            }
+
+            .showcase-row.reverse {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .showcase-row.reverse .showcase-image {
+                order: 2;
+            }
+
+            .showcase-row.reverse .showcase-info {
+                order: 1;
+            }
+
+            .showcase-image {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .showcase-image img {
+                width: 70%;
+                height: auto;
+                border-radius: 16px;
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .showcase-image img:hover {
+                transform: translateY(-8px) scale(1.02);
+            }
+
+            .showcase-info {
+                padding: 0;
+            }
+
+            .showcase-info h3 {
+                font-size: 2.2rem;
+                font-weight: 800;
+                margin-bottom: 20px;
+                color: var(--feature-title);
+                line-height: 1.2;
+                letter-spacing: -0.5px;
+            }
+
+            .showcase-info p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                opacity: 0.85;
+                margin-bottom: 32px;
+                color: var(--adw-fg);
+            }
+
+            .info-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .info-list li {
+                padding: 16px 20px;
+                font-size: 1rem;
+                line-height: 1.6;
+                background-color: var(--adw-card-bg);
+                border-radius: 12px;
+                border: 1px solid var(--adw-border);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                padding-left: 48px;
+            }
+
+            .info-list li::before {
+                content: "✓";
+                position: absolute;
+                left: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--adw-accent);
+                font-weight: 900;
+                font-size: 1.2rem;
+            }
+
+            .info-list li:hover {
+                transform: translateX(4px);
+                background-color: var(--adw-bg);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            }
+
+            .info-list strong {
+                color: var(--adw-accent);
+                font-weight: 700;
+            }
+
+            @media (max-width: 900px) {
+                .app-showcase {
+                    gap: 80px;
+                }
+
+                .showcase-row,
+                .showcase-row.reverse {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+
+                .showcase-row .showcase-image {
+                    order: 1;
+                }
+
+                .showcase-row .showcase-info {
+                    order: 2;
+                }
+
+                .showcase-row.reverse .showcase-image {
+                    order: 1;
+                }
+
+                .showcase-row.reverse .showcase-info {
+                    order: 2;
+                }
+
+                .showcase-info h3 {
+                    font-size: 1.8rem;
+                    margin-bottom: 16px;
+                }
+
+                .showcase-info p {
+                    font-size: 1rem;
+                    margin-bottom: 24px;
+                }
+
+                .app-showcase-container {
+                    padding: 0 20px;
+                    margin: 60px auto;
+                }
+
+                .info-list li {
+                    padding: 14px 18px;
+                    padding-left: 42px;
+                    font-size: 0.95rem;
+                }
+
+                .info-list li::before {
+                    left: 16px;
+                    font-size: 1.1rem;
+                }
+
+                .showcase-image img {
+                    border-radius: 12px;
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .app-showcase {
+                    gap: 64px;
+                }
+
+                .showcase-row {
+                    gap: 32px;
+                }
+
+                .showcase-info h3 {
+                    font-size: 1.6rem;
+                }
+
+                .showcase-info p {
+                    font-size: 0.95rem;
+                    line-height: 1.7;
+                    margin-bottom: 20px;
+                }
+
+                .info-list {
+                    gap: 12px;
+                }
+
+                .info-list li {
+                    padding: 12px 16px;
+                    padding-left: 38px;
+                    font-size: 0.9rem;
+                }
+
+                .info-list li::before {
+                    left: 14px;
+                    font-size: 1rem;
+                }
             }
 
             .screenshot {
@@ -379,6 +603,65 @@
 
             .install-section {
                 margin-bottom: 80px;
+            }
+
+            .translation-section {
+                margin-bottom: 80px;
+                text-align: center;
+            }
+
+            .translation-methods {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 24px;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+
+            .translation-card {
+                background-color: var(--adw-card-bg);
+                padding: 28px;
+                border-radius: var(--adw-radius);
+                border: 1px solid var(--adw-border);
+                transition: transform 0.2s, box-shadow 0.2s;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .translation-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            .translation-card h3 {
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+                color: var(--feature-title);
+            }
+
+            .translation-card p {
+                opacity: 0.9;
+                line-height: 1.6;
+                margin-bottom: 16px;
+                flex-grow: 1;
+            }
+
+            .translation-card .btn-primary,
+            .translation-card .btn-secondary {
+                align-self: flex-start;
+            }
+
+            .translation-status {
+                margin-top: 40px;
+                padding: 32px;
+                background-color: var(--adw-card-bg);
+                border-radius: var(--adw-radius);
+                border: 1px solid var(--adw-border);
+            }
+
+            .translation-status h3 {
+                font-size: 1.4rem;
+                color: var(--feature-title);
             }
 
             .contributors-section {
@@ -573,13 +856,54 @@
                 </div>
             </section>
 
-            <section class="screenshots-container">
-                <img src="./screenshot1.webp" alt="Samaya Screenshot - Timer" class="screenshot" />
-                <img
-                    src="./screenshot2.webp"
-                    alt="Samaya Screenshot - Settings"
-                    class="screenshot"
-                />
+            <section class="app-showcase-container">
+                <div class="app-showcase">
+                    <div class="showcase-row">
+                        <div class="showcase-image">
+                            <img
+                                src="./screenshot1.webp"
+                                alt="Samaya app interface showing timer"
+                                class="screenshot"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="showcase-info">
+                            <h3>Minimalist & Distraction-Free</h3>
+                            <p>
+                                Samaya offers a clean, elegant interface designed specifically for focus and productivity.
+                                With only 55KB in size (120KB including all assets), it's incredibly lightweight and efficient.
+                            </p>
+                            <ul class="info-list">
+                                <li><strong>Ultra-Lightweight:</strong> Only 55KB app size</li>
+                                <li><strong>Native GNOME:</strong> Perfect desktop integration</li>
+                                <li><strong>Built with Libadwaita:</strong> Modern and responsive UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-row reverse">
+                        <div class="showcase-info">
+                            <h3>Flexible & Customizable</h3>
+                            <p>
+                                Adapt Samaya to your workflow with customizable work and break durations. 
+                                Switch between different routines or skip sessions as needed.
+                            </p>
+                            <ul class="info-list">
+                                <li><strong>Custom Durations:</strong> Set your own work/break times</li>
+                                <li><strong>Smart Notifications:</strong> Sound alerts when timers end</li>
+                                <li><strong>Session Management:</strong> Skip or switch routines instantly</li>
+                            </ul>
+                        </div>
+                        <div class="showcase-image">
+                            <img
+                                src="./screenshot2.webp"
+                                alt="Samaya app settings view"
+                                class="screenshot"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <div class="container">
@@ -588,7 +912,7 @@
                     <div class="feature-card">
                         <h3>Light Weight</h3>
                         <p>
-                            Only ~55KB in size (111KB with assets). Built for speed and efficiency.
+                            Only ~55KB in size (120KB with assets). Built for speed and efficiency.
                         </p>
                     </div>
                     <div class="feature-card">
@@ -686,6 +1010,43 @@ meson install -C builddir</div>
                     </div>
                 </div>
 
+                <div class="translation-section">
+                    <h2 class="section-title">Help Translate Samaya</h2>
+                    <p style="opacity: 0.9; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        Samaya is available in multiple languages thanks to our amazing translators. 
+                        Help make Samaya accessible to more people by contributing translations!
+                    </p>
+                    
+                    <div class="translation-methods">
+                        <div class="translation-card">
+                            <h3>Codeberg Translate</h3>
+                            <p>
+                                The easiest way to translate. No technical knowledge required - just log in with your Codeberg account and start translating directly in your browser.
+                            </p>
+                            <a href="https://translate.codeberg.org/projects/samaya/" target="_blank" class="btn-primary">
+                                Start Translating
+                            </a>
+                        </div>
+                        
+                        <div class="translation-card">
+                            <h3>Manual Translation</h3>
+                            <p>
+                                Prefer working offline? Fork the repository, edit .po files in the po/ directory using tools like Poedit or Gtranslator, and submit a Pull Request.
+                            </p>
+                            <a href="https://codeberg.org/lockedmutex/samaya" target="_blank" class="btn-secondary">
+                                View Repository
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="translation-status">
+                        <h3 style="margin-bottom: 16px;">Current Translation Status</h3>
+                        <a href="https://translate.codeberg.org/engage/samaya/" target="_blank">
+                            <img src="https://translate.codeberg.org/widget/samaya/open-graph.png" alt="Translation status" style="max-width: 100%; height: auto; border-radius: var(--adw-radius);" />
+                        </a>
+                    </div>
+                </div>
+
                 <div class="contributors-section" id="contributors-container" style="display: none">
                     <h2 class="section-title">Contributors</h2>
                     <p style="opacity: 0.8; margin-bottom: 20px">
@@ -697,7 +1058,7 @@ meson install -C builddir</div>
         </main>
 
         <footer>
-            <p>Copyright &copy; 2025 lockedmutex (Suyog Tandel)</p>
+            <p>Copyright &copy; 2025-26 Suyog Tandel</p>
             <p>Licensed under GNU AGPL v3.0</p>
             <p style="margin-top: 10px">
                 Built with <span class="heart">❤️</span> for productivity enthusiasts.
