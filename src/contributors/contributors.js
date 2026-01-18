@@ -3,7 +3,7 @@ window.SAMAYA_CONTRIBUTORS = [
         "username": "lockedmutex",
         "avatar_url": "https://codeberg.org/avatars/45e02b4a39a053f0bc185fd02c54ef10aac8667ce27e64195e3992db7bfd8cca",
         "profile_url": "https://codeberg.org/lockedmutex",
-        "contributions": 22,
+        "contributions": 23,
         "local_image": "./contributors/images/lockedmutex.webp"
     },
     {
@@ -33,12 +33,5 @@ window.SAMAYA_CONTRIBUTORS = [
         "profile_url": "https://codeberg.org/ma12vlad",
         "contributions": 1,
         "local_image": "./contributors/images/ma12vlad.webp"
-    },
-    {
-        "username": "yakushabb",
-        "avatar_url": "https://codeberg.org/avatars/18748967cebea2c0af5f16d6b9a3ccc63507c3bc6586e747a396ba6c91d33237",
-        "profile_url": "https://codeberg.org/yakushabb",
-        "contributions": 1,
-        "local_image": "./contributors/images/yakushabb.webp"
     }
 ];
