@@ -14,24 +14,17 @@ window.SAMAYA_CONTRIBUTORS = [
         "local_image": "./contributors/images/jrtcdbrg.webp"
     },
     {
+        "username": "artnay",
+        "avatar_url": "https://codeberg.org/avatars/1f49e17d45a00e742dadce4314a8726c386646f1a8daee21dd34b39b4f57dbf2",
+        "profile_url": "https://codeberg.org/artnay",
+        "contributions": 2,
+        "local_image": "./contributors/images/artnay.webp"
+    },
+    {
         "username": "Vistaus",
         "avatar_url": "https://codeberg.org/avatars/fc8e4e41ba93a3067f0370f1bd7c600a",
         "profile_url": "https://codeberg.org/Vistaus",
         "contributions": 1,
         "local_image": "./contributors/images/vistaus.webp"
-    },
-    {
-        "username": "hthienloc",
-        "avatar_url": "https://codeberg.org/avatars/ba69859398ae016ed05d9f0474455d19",
-        "profile_url": "https://codeberg.org/hthienloc",
-        "contributions": 1,
-        "local_image": "./contributors/images/hthienloc.webp"
-    },
-    {
-        "username": "ma12vlad",
-        "avatar_url": "https://codeberg.org/avatars/86497939d347b96a028635c5a588f9ee8aa6c14700739c31c7ca21c3235fd6ff",
-        "profile_url": "https://codeberg.org/ma12vlad",
-        "contributions": 1,
-        "local_image": "./contributors/images/ma12vlad.webp"
     }
 ];
