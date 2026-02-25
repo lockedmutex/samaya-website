@@ -17,31 +17,42 @@ os.makedirs(IMAGES_DIR, exist_ok=True)
 
 def fetch_contributors():
     print(f"Fetching commits from {API_URL}...")
-    try:
-        response = requests.get(API_URL)
-        response.raise_for_status()
-        commits = response.json()
-    except Exception as e:
-        print(f"Error fetching data: {e}")
-        return []
-
+    
     contributors_map = {}
+    page = 1
+    limit = 50
+    
+    while True:
+        try:
+            response = requests.get(f"{API_URL}?limit={limit}&page={page}")
+            response.raise_for_status()
+            commits = response.json()
+            if not commits:
+                break
+        except Exception as e:
+            print(f"Error fetching data: {e}")
+            break
 
-    for commit in commits:
-        if "author" in commit and commit["author"]:
-            author = commit["author"]
-            username = author.get("login")
-            avatar_url = author.get("avatar_url")
+        for commit in commits:
+            if "author" in commit and commit["author"]:
+                author = commit["author"]
+                username = author.get("login")
+                avatar_url = author.get("avatar_url")
 
-            if username:
-                if username not in contributors_map:
-                    contributors_map[username] = {
-                        "username": username,
-                        "avatar_url": avatar_url,
-                        "profile_url": f"https://codeberg.org/{username}",
-                        "contributions": 0,
-                    }
-                contributors_map[username]["contributions"] += 1
+                if username:
+                    if username not in contributors_map:
+                        contributors_map[username] = {
+                            "username": username,
+                            "avatar_url": avatar_url,
+                            "profile_url": f"https://codeberg.org/{username}",
+                            "contributions": 0,
+                        }
+                    contributors_map[username]["contributions"] += 1
+                    
+        if len(commits) < limit:
+            break
+            
+        page += 1
 
     return list(contributors_map.values())
 
