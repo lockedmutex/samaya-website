@@ -3,7 +3,7 @@ window.SAMAYA_CONTRIBUTORS = [
         "username": "lockedmutex",
         "avatar_url": "https://codeberg.org/avatars/45e02b4a39a053f0bc185fd02c54ef10aac8667ce27e64195e3992db7bfd8cca",
         "profile_url": "https://codeberg.org/lockedmutex",
-        "contributions": 98,
+        "contributions": 99,
         "local_image": "./contributors/images/lockedmutex.webp"
     },
     {
