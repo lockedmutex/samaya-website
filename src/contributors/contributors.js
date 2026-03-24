@@ -28,6 +28,13 @@ window.SAMAYA_CONTRIBUTORS = [
         "local_image": "./contributors/images/yakushabb.webp"
     },
     {
+        "username": "mondstern",
+        "avatar_url": "https://codeberg.org/avatars/e1f84527d1e8e3e9bfac25de27171311",
+        "profile_url": "https://codeberg.org/mondstern",
+        "contributions": 2,
+        "local_image": "./contributors/images/mondstern.webp"
+    },
+    {
         "username": "artnay",
         "avatar_url": "https://codeberg.org/avatars/1f49e17d45a00e742dadce4314a8726c386646f1a8daee21dd34b39b4f57dbf2",
         "profile_url": "https://codeberg.org/artnay",
