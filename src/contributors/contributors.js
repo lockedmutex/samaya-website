@@ -49,6 +49,13 @@ window.SAMAYA_CONTRIBUTORS = [
         "local_image": "./contributors/images/ma12vlad.webp"
     },
     {
+        "username": "flipflop97",
+        "avatar_url": "https://codeberg.org/avatars/8d25fc33ee930a75568e24f91e707466",
+        "profile_url": "https://codeberg.org/flipflop97",
+        "contributions": 1,
+        "local_image": "./contributors/images/flipflop97.webp"
+    },
+    {
         "username": "Vistaus",
         "avatar_url": "https://codeberg.org/avatars/fc8e4e41ba93a3067f0370f1bd7c600a",
         "profile_url": "https://codeberg.org/Vistaus",
