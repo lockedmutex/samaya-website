@@ -29,7 +29,7 @@ window.SAMAYA_CONTRIBUTORS = [
     },
     {
         "username": "mondstern",
-        "avatar_url": "https://codeberg.org/avatars/bd4abeba8478797cff6d1e556db63592d54294dd77072ec8dd032456061997ec",
+        "avatar_url": "https://codeberg.org/avatars/aaf5f3f80e927080c38facf5339eb0af2a3bedb3e421c337ac603ddb37082f15",
         "profile_url": "https://codeberg.org/mondstern",
         "contributions": 2,
         "local_image": "./contributors/images/mondstern.webp"
