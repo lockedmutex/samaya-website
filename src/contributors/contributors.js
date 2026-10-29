@@ -50,7 +50,7 @@ window.SAMAYA_CONTRIBUTORS = [
     },
     {
         "username": "artnay",
-        "avatar_url": "https://codeberg.org/avatars/1f49e17d45a00e742dadce4314a8726c386646f1a8daee21dd34b39b4f57dbf2",
+        "avatar_url": "https://codeberg.org/avatars/679d1923296a7a70c6a76d2e43c976ef483adeb28fddfc71a28015dbdd74f527",
         "profile_url": "https://codeberg.org/artnay",
         "contributions": 2,
         "local_image": "./contributors/images/artnay.webp"
